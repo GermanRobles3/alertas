@@ -75,10 +75,15 @@ WSGI_APPLICATION = 'alertas.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'alertas.db',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'railway',
+        'USER': 'root',
+        'PASSWORD': 'o5EPU1db0VRBU7Xgj2Xd',
+        'HOST':'containers-us-west-116.railway.app',
+        'PORT':'6507',
     }
 }
 
